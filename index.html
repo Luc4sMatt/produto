@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Product Card Design Using HTML and CSS - Coding Power</title>
+</head>
+<body>
+
+</div>
+    <ul id="menu-h">
+    <li><a href="#"> Home</li></a>
+    <li><a href="#"> Sobre</li></a>
+    <li> <a href="#">Quem Somos</li></a>
+    <li> <a href="#">Contato</li></a>
+    <li> <a href="#">Entrar</li></a>
+</ul>
+   
+    <div class="container">
+       <div class="product">
+           <div class="image">
+               <img class="product-image" src="images/azul.jpg" alt="">
+           </div>
+           <div class="color">
+               <span class="blue   active" data-image="images/azul.jpg" data-color="#3395DB"></span>
+               <span class="black" data-image="images/preto.jpg" data-color="#000000"></span>
+               <span class="green" data-image="images/verde 1.jpg" data-color="#24A43F"></span>
+               <span class="green1" data-image="images/verde.jpg" data-color="#9DDB49"></span>
+           </div>
+           <div class="title">
+               Chinela Havaianas
+           </div>
+           <div class="detail">
+               <p>Valor : <span>R$ 80,00</span></p>
+               <a href="#">Adicionar ao Carrinho</a>
+           </div>
+       </div>
+   </div>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+   <script>
+       $(".color span").click(function(){
+
+        $(".color span").removeClass("active");
+        $(this).addClass("active");
+        $(".detail span").css("color",$(this).attr("data-color"));
+        $(".detail a").css("background",$(this).attr("data-color"));
+        $(".product-image").attr("src",$(this).attr("data-image"));
+        $("body").css("background",$(this).attr("data-color"));
+       });
+   </script>
+
+</body>
+</html>

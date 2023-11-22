@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: #33aff7;
+}
+
+.container{
+    width: 350px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.container .product{
+    background: #fafafa;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.container .product .image{
+    width: 300px;
+    height: 150px;
+    margin: auto;
+}
+
+.container .product .image .product-image{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: 0.8s linear;
+}
+
+.container .product .color{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    margin: 15px;
+}
+
+.container .product .color span{
+    width: 15px;
+    height: 15px;
+    margin: 0 15px;
+    border-radius: 50%;
+    background: #2aa3e9;
+    cursor: pointer;
+    position: relative;
+}
+
+.container .product .color .black{
+    background: black;
+}
+
+.container .product .color .green{
+    background: #24A43F;
+}
+
+.container .product .color .green1{
+    background: greenyellow;
+}
+
+.container .product .color .blue{
+    background: #3395DB;
+}
+
+.container .product .color .active::after{
+    content: "";
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: 2px solid #333;
+    position: absolute;
+    left: -3px;
+    top: -3px;
+}
+
+.container .product .title{
+    font-size: 22px;
+    text-align: center;
+}
+
+.container .product .detail{
+    text-align: center;
+}
+
+.container .product .detail p{
+    margin: 15px;
+    font-size: 25px;
+}
+
+.container .product .detail p span{
+    color: #3395DB;
+}
+
+.container .product .detail a{
+    text-decoration: none;
+    background: #3395DB;
+    padding: 8px 45px;
+    border-radius: 8px;
+    color: white;
+    margin: 15px;
+}
+#menu-h{
+    list-style-type: none;
+    padding: 0;
+    margin-left:71%;
+    margin-top:20px;
+}
+#menu-h li{
+    display: inline;
+
+}
+#menu-h li a{
+    color:#FFF;
+    text-decoration:none;
+    padding: 10px;
+    display:inline-block;
+    display: inline;
+}
+#img{
+    padding: 0;
+    margin-left:20px;
+    margin-top:20px;
+}
